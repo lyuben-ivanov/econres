@@ -1,10 +1,11 @@
 Package: econres
-Title: What the Package Does (One Line, Title Case)
+Title: Helper Functions For More Efficient Economic Research
 Version: 0.0.0.9000
 Authors@R: 
     person("Lyuben", "Ivanov", , "l.ivanov@feb.uni-sofia.bg", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3900-8897"))
-Description: What the package does (one paragraph).
+Description: A suite of functions to facilitate visual and tabular presentation 
+    of economic data as well as automate some common tasks in economic research.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
