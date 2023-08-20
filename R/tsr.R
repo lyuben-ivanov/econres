@@ -1,4 +1,16 @@
 
+#' Function for plotting unadjusted (raw) time series
+#'
+#' @param x
+#' @param y
+#' @param xlab
+#' @param main
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 tsr <- function (
     x,
     y,
