@@ -10,19 +10,23 @@
 #' @export
 #'
 #' @examples
-#' econres::mGDP |>
+#' mGDP |>
 #' dplyr::select(c(Year, `United Kingdom`, `United States`, China, India, Germany)) |>
 #' dplyr::filter(Year >= 1000) |>
 #' dplyr::arrange(Year) |>
-#' tsr(xlab = `Year`)
+#' tsr(xlab = 'Year')
 #'
 #'
 tsr <- function (
     x,
-    xlab = NULL,
-    main = NULL,
+    currency = '$',
+    unit = '',
     ...
 ) {
+
+  par(
+    mar = c(5, 5, 4, 6) + 0.1
+  )
 
   graphics::matplot(
     x = dplyr::select(x, 1),
@@ -30,21 +34,28 @@ tsr <- function (
     type = 'l',
     bty = 'l',
     col = 1,
-    xlab = xlab,
     ylab = '',
     xaxs = 'i',
     axes = F,
-    main = main
+    ...
   )
 
   graphics::axis(
     side = 1
   )
 
+  ylabs <- paste0(
+    currency,
+    graphics::axTicks(side = 2) |> format(big.mark = ',', trim = TRUE),
+    ' ',
+    unit
+  )
+
+
   graphics::axis(
     side = 2,
     at = graphics::axTicks(side = 2),
-    labels = graphics::axTicks(side = 2),
+    labels = ylabs,
     las = 2,
     tick = F
   )

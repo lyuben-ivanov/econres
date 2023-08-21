@@ -4,7 +4,7 @@
 \alias{tsr}
 \title{Function for plotting unadjusted (raw) time series}
 \usage{
-tsr(x, xlab = NULL, main = NULL, ...)
+tsr(x, currency = "$", unit = "", ...)
 }
 \arguments{
 \item{...}{}
@@ -13,11 +13,11 @@ tsr(x, xlab = NULL, main = NULL, ...)
 Function for plotting unadjusted (raw) time series
 }
 \examples{
-econres::mGDP |>
+mGDP |>
 dplyr::select(c(Year, `United Kingdom`, `United States`, China, India, Germany)) |>
 dplyr::filter(Year >= 1000) |>
 dplyr::arrange(Year) |>
-tsr(xlab = `Year`)
+tsr(xlab = 'Year')
 
 
 }
