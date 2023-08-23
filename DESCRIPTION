@@ -18,3 +18,4 @@ Imports:
     readr,
     tidyr,
     utils
+LazyData: true
