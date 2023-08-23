@@ -21,8 +21,8 @@ country codes were removed.
 mGDP
 }
 \description{
-Maddison Project Database 2020 (Bolt and van Zanden, 2020) data of GDP per
-capita for 178 different countries spaninng the time period from year 1 to year 2018 AD.
+Maddison Project data of GDP per capita for 178 different countries spanning
+the time period from year 1 to year 2018 AD.
 }
 \details{
 The data is expressed in international-$ at 2011 prices. International
@@ -34,5 +34,8 @@ adjustments is to provide a unit whose purchasing power is held fixed over
 time and across countries, such that one international dollar can buy the
 same quantity and quality of goods and services no matter where or when it is
 spent.
+}
+\references{
+Maddison Project Database 2020 (Bolt and van Zanden, 2020)
 }
 \keyword{datasets}

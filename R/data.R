@@ -1,7 +1,7 @@
 #' GDP per capita data for 178 countries
 #'
-#' Maddison Project Database 2020 (Bolt and van Zanden, 2020) data of GDP per
-#' capita for 178 different countries spaninng the time period from year 1 to year 2018 AD.
+#' Maddison Project data of GDP per capita for 178 different countries spanning
+#' the time period from year 1 to year 2018 AD.
 #'
 #' The data is expressed in international-$ at 2011 prices. International
 #' dollars are a hypothetical currency that is used to make meaningful
@@ -23,4 +23,5 @@
 #'
 #' After the data was downloaded, it was recast in a wide form dataframe and the
 #' country codes were removed.
+#' @references Maddison Project Database 2020 (Bolt and van Zanden, 2020)
 "mGDP"
