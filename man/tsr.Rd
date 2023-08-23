@@ -24,8 +24,8 @@ A plot object.
 }
 \description{
 \code{tsr()} takes a dataframe with raw time series data and uses the data to
-create a plot with multiple lines for the time period which the dataframe
-covers.
+create a time series plot with multiple lines for the time period which the
+data covers.
 }
 \examples{
 mGDP |>
