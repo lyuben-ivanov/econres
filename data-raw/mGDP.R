@@ -8,4 +8,4 @@ mGDP <- readr::read_csv(
 
 usethis::use_data(mGDP, overwrite = TRUE, internal = TRUE)
 
-
+# source: https://ourworldindata.org/grapher/gdp-per-capita-maddison
