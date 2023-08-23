@@ -6,6 +6,6 @@ mGDP <- readr::read_csv(
   tidyr::pivot_wider(names_from = Entity, values_from = `GDP per capita`) |>
   dplyr::arrange(Year)
 
-usethis::use_data(mGDP, overwrite = TRUE, internal = TRUE)
+usethis::use_data(mGDP, overwrite = TRUE, internal = FALSE)
 
 # source: https://ourworldindata.org/grapher/gdp-per-capita-maddison
