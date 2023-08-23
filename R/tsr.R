@@ -32,7 +32,7 @@ tsr <- function (
     ...
 ) {
 
-  par(
+  graphics::par(
     mar = c(5, 5, 4, 6) + 0.1
   )
 
