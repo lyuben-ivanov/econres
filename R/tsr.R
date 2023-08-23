@@ -62,10 +62,10 @@ tsr <- function (
     cex = 0.9
   )
 
-  text(
-    x = x |> dplyr::select(1) |> tail(n = 1),
-    y = x |> tail(n = 1) |> as.numeric() |> tail(n = -1L),
-    labels = x |> names() |> tail(n = -1L),
+  graphics::text(
+    x = x |> dplyr::select(1) |> utils::tail(n = 1),
+    y = x |> utils::tail(n = 1) |> as.numeric() |> utils::tail(n = -1L),
+    labels = x |> names() |> utils::tail(n = -1L),
     xpd = TRUE,
     pos = 4,
     cex = 0.9
