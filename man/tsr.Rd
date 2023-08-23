@@ -7,10 +7,25 @@
 tsr(x, currency = "$", unit = "", ...)
 }
 \arguments{
-\item{...}{}
+\item{x}{A dataframe (in wide format) where the first column is a vector of
+years and the rest of the columns are vectors of values presenting time
+series for one or more economic variables.}
+
+\item{currency}{The currency in which the time series are quoted (defaulting
+to $).}
+
+\item{unit}{The unit in which the time series are measured (mlns, kgs, etc.)}
+
+\item{...}{Arguments to be passed to methods of \code{\link[=plot]{plot()}} and \code{\link[=lines]{lines()}}, such
+as \link{graphical parameters} (see \link{par}).}
+}
+\value{
+A plot object.
 }
 \description{
-Function for plotting unadjusted (raw) time series
+\code{tsr()} takes a dataframe with raw time series data and uses the data to
+create a plot with multiple lines for the time period which the dataframe
+covers.
 }
 \examples{
 mGDP |>

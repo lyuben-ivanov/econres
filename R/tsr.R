@@ -1,12 +1,20 @@
 
 #' Function for plotting unadjusted (raw) time series
 #'
-#' @param x
-#' @param xlab
-#' @param main
-#' @param ...
+#' `tsr()` takes a dataframe with raw time series data and uses the data to
+#' create a time series plot with multiple lines for the time period which the
+#' data covers.
 #'
-#' @return
+#' @param x A dataframe (in wide format) where the first column is a vector of
+#' years and the rest of the columns are vectors of values presenting time
+#' series for one or more economic variables.
+#' @param currency The currency in which the time series are quoted (defaulting
+#' to $).
+#' @param unit The unit in which the time series are measured (mlns, kgs, etc.)
+#' @param ... Arguments to be passed to methods of [plot()] and [lines()], such
+#' as [graphical parameters] (see [par]).
+#'
+#' @return A plot object.
 #' @export
 #'
 #' @examples
