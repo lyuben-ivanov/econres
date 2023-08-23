@@ -16,4 +16,5 @@ Imports:
     dplyr,
     graphics,
     readr,
-    tidyr
+    tidyr,
+    utils
