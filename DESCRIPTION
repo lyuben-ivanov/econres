@@ -15,9 +15,8 @@ Depends:
 Imports: 
     dplyr,
     graphics,
+    magrittr,
     readr,
     tidyr,
     utils
 LazyData: true
-Suggests: 
-    magrittr
