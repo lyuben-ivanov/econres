@@ -19,3 +19,5 @@ Imports:
     tidyr,
     utils
 LazyData: true
+Suggests: 
+    magrittr
