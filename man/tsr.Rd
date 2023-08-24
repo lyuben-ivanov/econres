@@ -32,7 +32,7 @@ mGDP |>
 dplyr::select(c(Year, `United Kingdom`, `United States`, China, India, Germany)) |>
 dplyr::filter(Year >= 1000) |>
 dplyr::arrange(Year) |>
-tsr(xlab = 'Year')
+tsr(xlab = 'Year', main = "The hockeystick of growth", cex.main = 1.2)
 
 
 }

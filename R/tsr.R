@@ -22,7 +22,7 @@
 #' dplyr::select(c(Year, `United Kingdom`, `United States`, China, India, Germany)) |>
 #' dplyr::filter(Year >= 1000) |>
 #' dplyr::arrange(Year) |>
-#' tsr(xlab = 'Year')
+#' tsr(xlab = 'Year', main = "The hockeystick of growth", cex.main = 1.2)
 #'
 #'
 tsr <- function (
@@ -32,8 +32,14 @@ tsr <- function (
     ...
 ) {
 
+  def.par = graphics::par(no.readonly = TRUE) # save current par() settings
+
   graphics::par(
-    mar = c(5, 5, 4, 6) + 0.1
+    mar = c(5, 5, 3, 6) + 0.1,
+    tcl = -0.3,
+    cex = 0.8,
+    font.main = 1,
+    mgp = c(2, 1, 0)
   )
 
   graphics::matplot(
@@ -45,6 +51,10 @@ tsr <- function (
     ylab = '',
     xaxs = 'i',
     axes = F,
+    ylim = c(
+      0,
+      dplyr::select(x, -1) |> max(na.rm = TRUE) |> magrittr::multiply_by(1.11)
+    ),
     ...
   )
 
@@ -79,7 +89,7 @@ tsr <- function (
     cex = 0.9
   )
 
-
+  graphics::par(def.par)
 
 }
 
