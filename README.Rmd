@@ -33,11 +33,17 @@ devtools::install_github("lyuben-ivanov/econres")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to efficiently produce an elegant times series plot that demonstrates the "hockey stick" of growth. To produce this plot you need to provide a suitably-formatted data frame (in wide format, with the first column being the time index) to the `tsr()` function and it will plot the values in the columns as time series and label them automatically with the names of the corresponding columns. Do note that after the first element is supplied to the function you can add any element that the methods of `plot()` accept to customize the plot further.
 
 ```{r example}
-## library(econres)
-## basic example code
+library(econres)
+
+mGDP |>
+dplyr::select(c(Year, `United Kingdom`, `United States`, China, India, Germany)) |>
+dplyr::filter(Year >= 1000) |>
+dplyr::arrange(Year) |>
+tsr(xlab = 'Year', main = "The hockey stick of growth", cex.main = 1.2)
+
 ```
 
 
