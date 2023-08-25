@@ -1,6 +1,6 @@
 Package: econres
 Title: Helper Functions For More Efficient Economic Research
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person("Lyuben", "Ivanov", , "l.ivanov@feb.uni-sofia.bg", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3900-8897"))
