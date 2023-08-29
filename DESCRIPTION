@@ -18,5 +18,7 @@ Imports:
     magrittr,
     readr,
     tidyr,
+    tikzDevice,
+    tikZdevice,
     utils
 LazyData: true
