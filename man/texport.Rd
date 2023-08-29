@@ -11,8 +11,8 @@ texport(x, file_name = "figure_1", operating_system = "macOS")
 
 \item{file_name}{name of resulting figure}
 
-\item{operating_system}{specify the operating to ensure smooth handling of
-'\' when the filepath for the new figure is created}
+\item{operating_system}{specify the operating system to ensure smooth
+handling of \' when the file path for the new figure is created}
 }
 \value{
 a TeX file containing the plot that is being exported
@@ -23,6 +23,6 @@ tikzDevice engine.
 }
 \details{
 Use \code{texport()} if you really need to insert your file in a LaTeX document
-as a TeX code (possibly to do some changes that are easier to do in \LaTeX
-than in R)
+as a TeX code (possibly to do some changes that are easier to do in LaTeX
+than in R).
 }
