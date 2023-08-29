@@ -20,5 +20,6 @@ Imports:
     tidyr,
     tikzDevice,
     tikZdevice,
-    utils
+    utils,
+    yfR
 LazyData: true
