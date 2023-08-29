@@ -1,7 +1,7 @@
 #' Plot stock prices
 #'
-#' `tss()` plots up to two time series containing stock prices for a specified
-#' time period.
+#' `tss()` plots up to two time series containing index(es) of stock prices
+#' for a specified time period.
 #'
 #' This function was moved from `ter` package as part of its
 #' *conscious uncoupling* into smaller and more specialized packages.
@@ -24,19 +24,19 @@
 #'
 #'
 
-stock_plot <-
+tss <-
   function (start_date = "1983-06-27",
             end_date = Sys.Date(),
             stock_ticker_1 = "^GSPC",
-            stock_ticker_2 = "^GSPC",
-            label_1 = "SP 500",
-            label_2 = "SP 500",
+            stock_ticker_2 = "BRK-A",
+            label_1 = "S&P 500",
+            label_2 = "Berkshire \nHathaway",
             freq_data = "monthly",
             annotation_x = NULL,
             annotation_y = NULL,
             annotation_text = NULL) {
 
-    graphics::par(mar =                     # set margins around plot
+    graphics::par(mar =           # set margins around plot
           c(4, 4, 4, 4),          # (bottom, left, top, right)
         cex = 0.9,                # text magnification
         yaxs = "i",
@@ -102,4 +102,5 @@ stock_plot <-
           dplyr::last()
       )
     )
+
   }
