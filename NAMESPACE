@@ -3,3 +3,4 @@
 export(texport)
 export(tsp)
 export(tsr)
+export(tss)

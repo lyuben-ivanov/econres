@@ -18,7 +18,7 @@
 #' @param annotation_y The y-axis coordinate(s) of one or more annotations
 #' @param annotation_text The text(s) for one or more annotations
 #'
-#'
+#'@export
 #'
 #'
 #'
