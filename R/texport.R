@@ -24,7 +24,7 @@ texport <-
       file_path <- paste0(getwd(),"\\", file_name, ".tex")
     }
 
-    tikz(                                            # starting tikzDevice
+    tikzDevice::tikz(                                # starting tikzDevice
       file = file_path,                              # output path and file name
       width = 4.5, height = 2.5                      # the size of the figure
     )
