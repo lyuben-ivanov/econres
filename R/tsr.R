@@ -60,7 +60,7 @@ tsr <- function (
 
   graphics::axis(
     side = 1,
-    cex = 0.9
+    cex = 1
   )
 
   ylabs <- paste0(
@@ -77,7 +77,7 @@ tsr <- function (
     labels = ylabs,
     las = 2,
     tick = F,
-    cex = 0.9
+    cex = 1
   )
 
   graphics::text(
@@ -86,7 +86,7 @@ tsr <- function (
     labels = x |> names() |> utils::tail(n = -1L),
     xpd = TRUE,
     pos = 4,
-    cex = 1.2
+    cex = 1
   )
 
   graphics::par(def.par)
