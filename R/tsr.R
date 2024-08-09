@@ -35,7 +35,7 @@ tsr <- function (
   def.par = graphics::par(no.readonly = TRUE) # save current par() settings
 
   graphics::par(
-    mar = c(5, 5, 3, 6) + 0.1,
+    mar = c(5, 5, 3, 6.5) + 0.1,
     tcl = -0.3,
     # cex = 0.8,
     font.main = 1,
