@@ -37,7 +37,7 @@ tsr <- function (
   graphics::par(
     mar = c(5, 5, 3, 6) + 0.1,
     tcl = -0.3,
-    cex = 0.8,
+    # cex = 0.8,
     font.main = 1,
     mgp = c(2, 1, 0)
   )
@@ -86,7 +86,7 @@ tsr <- function (
     labels = x |> names() |> utils::tail(n = -1L),
     xpd = TRUE,
     pos = 4,
-    cex = 0.9
+    cex = 1.2
   )
 
   graphics::par(def.par)
