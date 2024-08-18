@@ -1,7 +1,7 @@
 #' GDP per capita data for 178 countries
 #'
 #' Maddison Project data of GDP per capita for 178 different countries spanning
-#' the time period from year 1 to year 2018 AD.
+#' the time period from year 1 to year 2022 AD.
 #'
 #' The data is expressed in international-$ at 2011 prices. International
 #' dollars are a hypothetical currency that is used to make meaningful
@@ -14,7 +14,7 @@
 #' spent.
 #'
 #' @format
-#' A dataframe with 772 rows and 179 columns:
+#' A dataframe with 776 rows and 179 columns:
 #' \describe{
 #'   \item{Year}{Year for which GDP per capita data is available}
 #'   \item{Afghanistan, Albania, etc.}{Country names}
@@ -23,5 +23,5 @@
 #'
 #' After the data was downloaded, it was recast in a wide form dataframe and the
 #' country codes were removed.
-#' @references Maddison Project Database 2020 (Bolt and van Zanden, 2020)
+#' @references Bolt and van Zanden - Maddison Project Database 2023 – with minor processing by Our World in Data
 "mGDP"
